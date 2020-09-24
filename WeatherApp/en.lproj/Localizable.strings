@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  WeatherApp
+
+  Created by Vitaliy on 24.09.2020.
+  Copyright © 2020 Vitaliy Gribko. All rights reserved.
+*/
+
+"Error find location" = "Error find location";
+"Unable to find your location." = "Unable to find your location.";
+"Please enable location service in the settings." = "Please enable location service in the settings.";
+"Internet connection error" = "Internet connection error";
+"Check your internet connection settings." = "Check your internet connection settings.";
+"Error getting weather" = "Error getting weather";
+"Unexpected HTTP status response" = "Unexpected HTTP status response";
+"mmHg" = "mmHg";

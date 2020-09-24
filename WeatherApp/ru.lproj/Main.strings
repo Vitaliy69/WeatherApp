@@ -1,0 +1,15 @@
+
+/* Class = "UIButton"; normalTitle = "Refresh"; ObjectID = "6Bk-wR-oCD"; */
+"6Bk-wR-oCD.normalTitle" = "Обновить";
+
+/* Class = "UILabel"; text = "- mmHg"; ObjectID = "8eM-32-isR"; */
+"8eM-32-isR.text" = "- ммРт";
+
+/* Class = "UILabel"; text = "- %"; ObjectID = "ERj-BQ-qXv"; */
+"ERj-BQ-qXv.text" = "- %";
+
+/* Class = "UILabel"; text = "Unknown location"; ObjectID = "mm4-dW-KCd"; */
+"mm4-dW-KCd.text" = "Неизвестное место";
+
+/* Class = "UILabel"; text = "-˚C"; ObjectID = "xmn-Ct-oal"; */
+"xmn-Ct-oal.text" = "-˚C";
