@@ -12,8 +12,8 @@ import CoreLocation
 
 class WeatherManager {
     
-    let timeOut: TimeInterval = 5
-    
+    let httpTimeOut: TimeInterval = 10
+    let deltaTimeout: TimeInterval = 2
     
     /// Get new weather data from server
     /// - Parameters:
@@ -43,7 +43,7 @@ class WeatherManager {
                 dataGroup.enter()
                 
                 DispatchQueue.global(qos: .utility).async {
-                    self.getData(url: url, timeout: self.timeOut) { (data, error) in
+                    self.getData(url: url, timeout: self.httpTimeOut) { (data, error) in
                         if let weatherData = data {
                             dataSemaphore.wait()
                             globalError = self.processData(dataType: DataType.init(rawValue: index)!, data: weatherData, currentWeather: &currentWeather)
@@ -61,7 +61,7 @@ class WeatherManager {
             }
         }
         
-        dataGroup.notifyWait(target: .main, timeout: DispatchTime.now() + timeOut) {
+        dataGroup.notifyWait(target: .main, timeout: DispatchTime.now() + .seconds(Int(httpTimeOut + deltaTimeout))) {
             completion(currentWeather, globalError)
         }
     }
@@ -70,7 +70,6 @@ class WeatherManager {
         case weather
         case location
     }
-    
     
     /// Parse new weather data
     /// - Parameters:

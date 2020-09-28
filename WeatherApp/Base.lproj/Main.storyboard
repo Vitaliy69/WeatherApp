@@ -22,8 +22,8 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="GuY-SQ-9b4">
                                 <rect key="frame" x="0.0" y="44" width="414" height="814"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Unknown location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mm4-dW-KCd">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="56.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Unknown location" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mm4-dW-KCd">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="67"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="dsk-8N-60j"/>
                                         </constraints>
@@ -32,17 +32,17 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="clear_day" translatesAutoresizingMaskIntoConstraints="NO" id="x6G-mu-n44">
-                                        <rect key="frame" x="0.0" y="83.5" width="414" height="290"/>
+                                        <rect key="frame" x="0.0" y="94" width="414" height="286"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="2XU-rI-Jg7"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="RTq-4E-CxW"/>
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="l7p-qM-Tlp">
-                                        <rect key="frame" x="0.0" y="400.5" width="414" height="46.5"/>
+                                        <rect key="frame" x="0.0" y="407" width="414" height="45.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="- mmHg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8eM-32-isR">
-                                                <rect key="frame" x="0.0" y="13" width="137" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="12.5" width="137" height="20.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="110" id="vEC-A6-Qky"/>
                                                 </constraints>
@@ -51,10 +51,10 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="paI-6e-5SK">
-                                                <rect key="frame" x="177" y="13" width="43.5" height="20"/>
+                                                <rect key="frame" x="177" y="12.5" width="43.5" height="20"/>
                                             </activityIndicatorView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="- %" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ERj-BQ-qXv">
-                                                <rect key="frame" x="260.5" y="13" width="153.5" height="20.5"/>
+                                                <rect key="frame" x="260.5" y="12.5" width="153.5" height="20.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="110" id="wlL-93-Bfq"/>
                                                 </constraints>
@@ -65,7 +65,7 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="250" text="-˚C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmn-Ct-oal">
-                                        <rect key="frame" x="0.0" y="474" width="414" height="293"/>
+                                        <rect key="frame" x="0.0" y="479.5" width="414" height="287.5"/>
                                         <fontDescription key="fontDescription" type="italicSystem" pointSize="40"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
