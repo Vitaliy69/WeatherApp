@@ -60,6 +60,7 @@ struct Location: Decodable, Hashable {
         }
         
         struct Components: Decodable, Hashable {
+            let state: String
             let city: String
             let country: String
         }

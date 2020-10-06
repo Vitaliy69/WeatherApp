@@ -12,7 +12,7 @@ import CoreLocation
 
 class WeatherManager {
     
-    let httpTimeOut: TimeInterval = 10
+    let httpTimeOut: TimeInterval = 15
     let deltaTimeout: TimeInterval = 2
     
     /// Get new weather data from server
@@ -105,6 +105,7 @@ class WeatherManager {
                     let location = try decoder.decode(Location.self, from: data)
                     switch location.results.first {
                         case .components(let components):
+                            currentWeather.state = components.state
                             currentWeather.country = components.country
                             currentWeather.city = components.city
                         case .none:

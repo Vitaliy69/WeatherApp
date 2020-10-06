@@ -18,6 +18,7 @@ struct CurrentWeather {
     var sunrise: Date
     var sunset: Date
     
+    var state: String
     var city: String
     var country: String
     
@@ -30,6 +31,7 @@ struct CurrentWeather {
         sunrise = Date()
         sunset = Date()
         
+        state = ""
         city = ""
         country = ""
     }
@@ -49,6 +51,10 @@ extension CurrentWeather {
     }
     
     var locationString: String {
-        return "\(city), \(country)"
+        guard city.count > 0 else {
+            return NSLocalizedString("Error find location", comment: "")
+        }
+        
+        return "\(country), \(state)/\(city)"
     }
 }
